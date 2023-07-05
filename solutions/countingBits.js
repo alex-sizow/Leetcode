@@ -19,11 +19,15 @@
 // 4 --> 100
 // 5 --> 101
 
-
 const countBits = (n) => {
 	let arr = [];
 	for (let i = 0; i <= n; i++) {
-		arr.push(i.toString(2));
+		arr.push(
+			[...i.toString(2)].reduce(
+				(accumulator, value) => accumulator + value * 1,
+				0,
+			),
+		);
 	}
 	return arr;
 };
