@@ -18,6 +18,9 @@
 // Output: false
 // Explanation: The array has 3 elements so it is not empty.
 
+
+
+
 const isEmpty = (obj) => {
-	return Object.keys(obj).length === 0;
+  return Object.keys(obj).length === 0;
 };
